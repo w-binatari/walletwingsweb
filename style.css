@@ -789,27 +789,39 @@ h1 {
 
     .ticket-body {
         /* Collapsed: Hidden below */
-        padding: 0 2rem;
+        padding: 0 1rem;
         opacity: 0;
-        height: 0;
+        max-height: 0;
         overflow: hidden;
         transform: translateY(10px);
         transition: all 0.4s ease;
-        /* Width should represent full width */
         width: 100%;
     }
 
     .ticket-card:hover .ticket-body {
         opacity: 1;
-        height: auto;
-        width: calc(100% - 60px);
-        /* Rest of the card */
+        max-height: 500px;
+        /* Use max-height for smooth animation */
+        overflow: visible;
         transform: translateY(0);
-        padding: 2rem 1.5rem 2rem 1.5rem;
-        /* Balanced Padding */
+        padding: 1.5rem 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .ticket-card:hover .ticket-body h3 {
+        font-size: 1.5rem;
+        /* Smaller title on mobile */
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    .ticket-card:hover .ticket-body p {
+        font-size: 0.9rem;
+        min-width: 0;
+        /* Remove min-width constraint */
+        word-wrap: break-word;
     }
 
     .ticket-barcode {

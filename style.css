@@ -112,6 +112,38 @@ body {
     }
 }
 
+/* --- Secondary Pages --- */
+.secondary-hero {
+    padding: 12rem 0 6rem 0;
+    text-align: center;
+    background: radial-gradient(circle at 50% 0%, rgba(204, 255, 0, 0.05), transparent 70%);
+}
+
+.secondary-hero h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.content-section {
+    padding: 6rem 0;
+}
+
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-text-dim);
+    line-height: 1.8;
+}
+
+.legal-content h2 {
+    color: #fff;
+    margin: 3rem 0 1rem 0;
+}
+
+.legal-content p {
+    margin-bottom: 1.5rem;
+}
+
 /* --- Navbar --- */
 .navbar {
     position: fixed;

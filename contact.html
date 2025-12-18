@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | WalletWings</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-label {
+            display: block;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--color-border);
+            padding: 1rem;
+            color: #fff;
+            border-radius: 8px;
+            font-family: var(--font-display);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+
+        @media (max-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo" style="text-decoration: none;">WALLETWINGS</a>
+
+            <div style="display: flex; gap: 3rem; align-items: center;">
+                <div class="hidden-mobile" style="display: flex; gap: 3rem;">
+                    <a href="index.html#features" class="nav-link">Features</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </div>
+                <button class="download-pill"
+                    style="background: var(--color-accent); color: black; border: none; padding: 0.8rem 1.5rem; cursor: pointer;">
+                    Get the App
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="secondary-hero">
+        <div class="container">
+            <div class="mono" style="color: var(--color-accent); margin-bottom: 1rem;">// HELLO EXPLORER</div>
+            <h1>GET IN<br><span class="text-gradient">TOUCH.</span></h1>
+            <p class="hero-tagline" style="margin: 0 auto;">Questions about your next voyage? Our support team is
+                stationed around the globe.</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <h2 style="font-size: 3rem; margin-bottom: 2rem;">Send a Signal</h2>
+                    <form>
+                        <div class="form-group">
+                            <span class="form-label">FULL NAME</span>
+                            <input type="text" class="form-input" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <span class="form-label">EMAIL ADDRESS</span>
+                            <input type="email" class="form-input" placeholder="you@domain.com">
+                        </div>
+                        <div class="form-group">
+                            <span class="form-label">MESSAGE</span>
+                            <textarea class="form-input" rows="5" placeholder="Tell us about your trip..."></textarea>
+                        </div>
+                        <button class="download-pill"
+                            style="background: #fff; color: #000; border: none; padding: 1rem 2rem; cursor: pointer; width: 100%;">
+                            Transmitting Signal...
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <div
+                        style="background: rgba(255,255,255,0.03); padding: 3rem; border-radius: 20px; border: 1px solid var(--color-border);">
+                        <h3 style="margin-bottom: 1.5rem;">Base Camp</h3>
+                        <p style="color: var(--color-text-dim); margin-bottom: 2rem;">WalletWings Inc.<br>123 Explorer
+                            Way<br>Digital Nomad Valley, CA 90210</p>
+
+                        <h3 style="margin-bottom: 1.5rem;">Direct Comms</h3>
+                        <p style="color: var(--color-text-dim); margin-bottom: 0.5rem;">Support: hello@walletwings.com
+                        </p>
+                        <p style="color: var(--color-text-dim);">Partnerships: voyage@walletwings.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 1.5rem; color: #fff;">WALLETWINGS</div>
+                    <p style="color: #666; max-width: 300px;">
+                        The financial compass for the modern explorer. Discover the world without breaking the bank.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="index.html" class="footer-link">Download</a>
+                    <a href="pricing.html" class="footer-link">Pricing</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                    <a href="terms.html" class="footer-link">Terms of Service</a>
+                    <a href="cookies.html" class="footer-link">Cookie Policy</a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <span>&copy; 2025 WalletWings Inc.</span>
+                <span>Designed for Explorers</span>
+            </div>
+        </div>
+        <div class="footer-big-text">WALLETWINGS</div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

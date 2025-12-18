@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing | WalletWings</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .price-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--color-border);
+            border-radius: 30px;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-card.featured {
+            border-color: var(--color-accent);
+            background: linear-gradient(135deg, rgba(204, 255, 0, 0.05), transparent);
+        }
+
+        .price-header {
+            margin-bottom: 2rem;
+        }
+
+        .price-amount {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .price-features {
+            list-style: none;
+            margin-bottom: 3rem;
+        }
+
+        .price-features li {
+            margin-bottom: 1rem;
+            color: var(--color-text-dim);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .price-features i {
+            color: var(--color-accent);
+            font-size: 1.2rem;
+        }
+
+        .ribbon {
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: var(--color-accent);
+            color: #000;
+            padding: 0.5rem 3rem;
+            transform: rotate(45deg);
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo" style="text-decoration: none;">WALLETWINGS</a>
+
+            <div style="display: flex; gap: 3rem; align-items: center;">
+                <div class="hidden-mobile" style="display: flex; gap: 3rem;">
+                    <a href="index.html#features" class="nav-link">Features</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </div>
+                <button class="download-pill"
+                    style="background: var(--color-accent); color: black; border: none; padding: 0.8rem 1.5rem; cursor: pointer;">
+                    Get the App
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="secondary-hero">
+        <div class="container">
+            <div class="mono" style="color: var(--color-accent); margin-bottom: 1rem;">// THE ECONOMY</div>
+            <h1>ZERO SURPRISE<br><span class="text-gradient">PRICING.</span></h1>
+            <p class="hero-tagline" style="margin: 0 auto;">No hidden fees. No subscription traps. Just pure exploration
+                power.</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="price-header">
+                        <div class="mono" style="color: var(--color-accent);">THE EXPLORER</div>
+                        <div class="price-amount">$0<span
+                                style="font-size: 1rem; color: var(--color-text-dim);">/forever</span></div>
+                        <p style="color: var(--color-text-dim);">Perfect for solo voyagers starting their journey.</p>
+                    </div>
+                    <ul class="price-features">
+                        <li><i class="material-icons">check_circle</i> Reverse Budget Search</li>
+                        <li><i class="material-icons">check_circle</i> 1 Active Trip Goal</li>
+                        <li><i class="material-icons">check_circle</i> Basic Vibe Cards</li>
+                        <li><i class="material-icons">check_circle</i> Community Insights</li>
+                    </ul>
+                    <button class="download-pill"
+                        style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid var(--color-border); padding: 1rem; cursor: pointer;">
+                        Explore for Free
+                    </button>
+                </div>
+
+                <div class="price-card featured">
+                    <div class="ribbon">POPULAR</div>
+                    <div class="price-header">
+                        <div class="mono" style="color: var(--color-accent);">THE VOYAGER</div>
+                        <div class="price-amount">$9<span
+                                style="font-size: 1rem; color: var(--color-text-dim);">/mo</span></div>
+                        <p style="color: var(--color-text-dim);">For those who live life between latitudes.</p>
+                    </div>
+                    <ul class="price-features">
+                        <li><i class="material-icons">check_circle</i> Unlimited Trip Goals</li>
+                        <li><i class="material-icons">check_circle</i> +10% Inflation Armor</li>
+                        <li><i class="material-icons">check_circle</i> Verified Deal Alerts</li>
+                        <li><i class="material-icons">check_circle</i> Premium AI Curation</li>
+                        <li><i class="material-icons">check_circle</i> Priority Support</li>
+                    </ul>
+                    <button class="download-pill"
+                        style="background: var(--color-accent); color: #000; border: none; padding: 1rem; cursor: pointer; font-weight: 700;">
+                        Upgrade to Voyager
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 1.5rem; color: #fff;">WALLETWINGS</div>
+                    <p style="color: #666; max-width: 300px;">
+                        The financial compass for the modern explorer. Discover the world without breaking the bank.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="index.html" class="footer-link">Download</a>
+                    <a href="pricing.html" class="footer-link">Pricing</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                    <a href="terms.html" class="footer-link">Terms of Service</a>
+                    <a href="cookies.html" class="footer-link">Cookie Policy</a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <span>&copy; 2025 WalletWings Inc.</span>
+                <span>Designed for Explorers</span>
+            </div>
+        </div>
+        <div class="footer-big-text">WALLETWINGS</div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
